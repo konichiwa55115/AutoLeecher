@@ -2,19 +2,19 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6032076608:AAFXge7_JrykpXnRIotIvl-EDa4Cdqr00_Y")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = int(os.environ.get("APP_ID", 17983098))
+    API_HASH = "ee28199396e0925f1f44d945ac174f64"
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
-    AUTH = set(int(x) for x in os.environ.get("AUTH", "").split())
+    AUTH = set(int(x) for x in os.environ.get("AUTH", "1227193881").split())
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOC = "./DOWNLOADS"
     # Telegram maximum file upload size
-    MAX_SIZE = 50000000
-    TG_MAX_SIZE = 2097152000
-    FREE_UZR_MAX_SIZE = 50000000
+    MAX_SIZE = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    TG_MAX_SIZE = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    FREE_UZR_MAX_SIZE = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999
     # chunk size that should be used with requests
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
     # default thumbnail to be used in the videos
